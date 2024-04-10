@@ -26,13 +26,13 @@
 2. Wait for a few minutes for the initial boot process to complete.
    a. Ping the device: `ping [device name]` in my case it is `pi@raspberry`
    b. Go to network settings and select RNDIS/Ethernet gadget
-      i. Select the interface you noted from Step 2 in the list on the left.
-      ii. Click the "Advanced" button, then go to the TCP/IP tab.
-      iii. Set "Configure IPv4" to "Manually".
-      iv. Enter the IP address 10.0.0.1, subnet mask 255.255.255.0, router to 10.0.0.1, and if needed, DNS server 9.9.9.9.
-      v. Make sure to change the service order so WIFI is above the pwnagotchi.
-      vi. Click "OK", then "Apply" to save your changes.
-      vii. Verify it by: `ping pi@10.0.0.2`
+      - Select the interface you noted from Step 2 in the list on the left.
+      - Click the "Advanced" button, then go to the TCP/IP tab.
+      - Set "Configure IPv4" to "Manually".
+      - Enter the IP address 10.0.0.1, subnet mask 255.255.255.0, router to 10.0.0.1, and if needed, DNS server 9.9.9.9.
+      - Make sure to change the service order so WIFI is above the pwnagotchi.
+      - Click "OK", then "Apply" to save your changes.
+      - Verify it by: `ping pi@10.0.0.2`
 3. By default, Pwnagotchi creates a network interface for SSH. You can SSH into your Pi using its IP address (which can be found on your router's admin page) and the default credentials (“pi” as the username and “raspberry” as the password) over your network.
    a. Connect to the pi via: `ssh -4 [accountname]@[devicename]` (change to what the name is) my case is `pi@10.0.0.2`.
    b. Enter the password. It should be raspberry
@@ -54,16 +54,16 @@
    a. Enter the command: `sudo touch /etc/pwnagotchi/config.toml`
    b. Enter the command: `sudo nano /etc/pwnagotchi/config.toml`
    c. Copy and paste the supplied `config.toml` file
-      i. Note if using inkyphat:
-         1. `ui.display.enabled = true`
-         2. `ui.display.type = "inkyphat"`
-      ii. Note if using waveshare:
-         1. `ui.display.enabled = true`
-         2. `ui.display.type = "waveshare_4"`
-      iii. Note: if you want to change color.
-         1. `ui.display.color = "black"`
-         2. `ui.display.color = "auto"`
-         3. `ui.display.color = "white"`
+      - Note if using inkyphat:
+         - `ui.display.enabled = true`
+         - `ui.display.type = "inkyphat"`
+      - Note if using waveshare:
+         - `ui.display.enabled = true`
+         - `ui.display.type = "waveshare_4"`
+      - Note: if you want to change color.
+         - `ui.display.color = "black"`
+         - `ui.display.color = "auto"`
+         - `ui.display.color = "white"`
 2. Change the login to the web UI
    a. `ui.web.username = "my_new_username"`
    b. `ui.web.password = "my_new_password"`
