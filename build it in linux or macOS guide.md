@@ -56,9 +56,7 @@
    c. Copy and paste the supplied `config.toml` file
       i. Note if using inkyphat:
          1. `ui.display.enabled = true`
-         2. `ui
-
-.display.type = "inkyphat"`
+         2. `ui.display.type = "inkyphat"`
       ii. Note if using waveshare:
          1. `ui.display.enabled = true`
          2. `ui.display.type = "waveshare_4"`
