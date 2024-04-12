@@ -1,5 +1,5 @@
 # pwnagotchi
-Guess what I built my own pwnagotchi!
+Guess what I built my own pwnagotchi! *On a Mac, that's right, you read that right.*
 
 # Notes
 
