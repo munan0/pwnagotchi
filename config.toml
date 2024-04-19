@@ -7,7 +7,7 @@
 main.name = "ENTER-NAME-HERE"
 main.lang = "en"
 main.whitelist = [
-    "APSU",
+    "EXAMPLE NETWORK",
     "ANOTHER_EXAMPLE_NETWORK",
     "fo:od:ba:be:fo:od",
     "fo:od:ba"
