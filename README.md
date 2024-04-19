@@ -5,8 +5,9 @@ Guess what I built my own pwnagotchi! *On a Mac, that's right, you read that rig
 
 A good guide to follow: [https://github.com/Xyl0se/Pwnagotchi-new-guerilla-guide?tab=readme-ov-file](https://github.com/Xyl0se/Pwnagotchi-new-guerilla-guide?tab=readme-ov-file)
 
-Command to get to plugins: cd /usr/local/share/pwnagotchi/custom-plugins
-wget whatever
+Command to get to plugins: 
+- `cd /usr/local/share/pwnagotchi/custom-plugins`
+- `wget [whatever insert link here]`
 
 Some other important pages or places I used:
   1. [https://pwnagotchi.org/getting-started/index.html](https://pwnagotchi.org/getting-started/index.html)
