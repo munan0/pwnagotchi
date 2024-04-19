@@ -33,8 +33,9 @@
       - Make sure to change the service order so WIFI is above the pwnagotchi.
       - Click "OK", then "Apply" to save your changes.
       - Verify it by: `ping pi@10.0.0.2`
-3. Download the script from: https://github.com/evilsocket/pwnagotchi/blob/master/scripts/macos_connection_share.sh
-      -	Cd to the where it’s downloaded.
+3. Download the script from (this will allow you to share internet): https://github.com/evilsocket/pwnagotchi/blob/master/scripts/macos_connection_share.sh
+      -	Choose the script based on your operating system.
+      -	Once downloaded cd to where it’s downloaded.
       -	Run `chmod +x macos_connection_share.sh` to make it executable
       -	Run the script: ` sudo ./macos_connection_share.sh en0 10.0.0.1`
       -	Enter your password
@@ -47,14 +48,7 @@
    - Change your password so enter: `passwd`
    - Enter new password & re-enter it
    - NOTE IF ERROR: `mv ~/.ssh/known_hosts ~/.ssh/known_hosts.backup`
-   - NOTE: logging in from now on, you will ssh `pi@[whatevername you have in config]`
-
-## Step 6: Sharing the Internet with your Pwnagotchi
-1. Download the script from: [https://github.com/evilsocket/pwnagotchi/blob/master/scripts/macos_connection_share.sh](https://github.com/evilsocket/pwnagotchi/blob/master/scripts/macos_connection_share.sh)
-2. Cd to where it’s downloaded.
-3. Run `chmod +x macos_connection_share.sh` to make it executable
-4. Run the script: `sudo ./macos_connection_share.sh en0 10.0.0.1`
-5. Enter your password
+   - NOTE: logging in from now on, you will ssh `pi@[whatevername you have in config]` or `pi@10.0.0.2` both will work
 
 ## Step 6: Set up the config.toml file
 1. Add your config file
@@ -81,7 +75,7 @@
 4. Enter the command: `sudo reboot now`
 5. Ssh back into it to change/adjust anything
 
-## Step 7: Setting up PiSugar Battery
+## Step 7: Setting up PiSugar2 Battery
 If using Pisugar2 go here: [https://github.com/PiSugar/PiSugar/wiki/PiSugar2#](https://github.com/PiSugar/PiSugar/wiki/PiSugar2#) 
 1. Go to the home directory
    - `cd ~`
